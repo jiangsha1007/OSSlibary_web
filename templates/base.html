@@ -344,8 +344,8 @@
                         <div class="user__info" data-toggle="dropdown">
                             <img class="user__img" src="{% static 'demo/img/profile-pics/8.jpg' %}" alt="">
                             <div>
-                                <div class="user__name">{{ request.session['user_name'] }}</div>
-                                <div class="user__email">malinda-h@gmail.com</div>
+                                <div class="user__name">{{ user.user_name }}</div>
+                                <div class="user__email">{{ user.user_email }}</div>
                             </div>
                         </div>
 
@@ -358,11 +358,14 @@
 
                     <ul class="navigation">
                         <li class="navigation__active"><a href="../index"><i class="zmdi zmdi-home"></i> Home</a></li>
+                        <li class="navigation__active"><a href="../new"><i class="zmdi zmdi-home"></i> New Monitor</a></li>
                         <li class="navigation__sub @@variantsactive">
                             {% if community %}
                                 {% for per_community in community %}
                                     <a href=""><i class="zmdi zmdi-view-week"></i> {{ per_community.community_name }}</a>
                                     <ul>
+                                        <li class="navigation__sub @@variantsactive"><a href="../overview/?cid={{ per_community.id }}">overview</a></li>
+
                                     {% for per_community_list in community_list %}
                                         {% if per_community_list.community_id == per_community.id %}
                                             <li class="navigation__sub @@variantsactive"><a href="">{{ per_community_list.oss_name }}</a></li>

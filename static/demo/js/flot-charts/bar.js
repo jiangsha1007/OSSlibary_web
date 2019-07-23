@@ -13,24 +13,7 @@ $(document).ready(function(){
             },
             color: '#fff'
         },
-        {
-            label: '2016',
-            data: [[1,20], [2,90], [3,60], [4,40], [5,100], [6,25], [7,65]],
-            bars: {
-                order: 1,
-                fillColor: 'rgba(255,255,255,0.5)'
-            },
-            color: 'rgba(255,255,255,0.5)'
-        },
-        {
-            label: '2017',
-            data: [[1,100], [2,20], [3,60], [4,90], [5,80], [6,10], [7,5]],
-            bars: {
-                order: 2,
-                fillColor: 'rgba(255,255,255,0.15)'
-            },
-            color: 'rgba(255,255,255,0.15)'
-        }
+
     ];
 
 
@@ -40,7 +23,7 @@ $(document).ready(function(){
             bars: {
                 show: true,
                 barWidth: 0.075,
-                fill: 1,
+                fill: 0.1,
                 lineWidth: 0
             }
         },

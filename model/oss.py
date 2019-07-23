@@ -29,12 +29,14 @@ class OsslibMeta(models.Model):
     oss_lastupdate_time = models.CharField(max_length=50)
     has_wiki = models.IntegerField(max_length=11)
     readme = models.CharField(max_length=5000)
+    uid = models.IntegerField(max_length=11)
+    status = models.IntegerField(max_length=11)
 
     def __str__(self):
         return self.oss_fullname
 
     class Meta:
-        db_table = 'osslib_metadata'
+        db_table = 'osslib_metadata_2'
 
 
 class OsslibTopic(models.Model):

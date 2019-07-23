@@ -17,12 +17,17 @@ from django.contrib import admin
 from django.urls import path
 from view.login import *
 from view.addoss import *
+from view.overview import *
+from view.new import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', login),
     path('index/', index),
     path('register/', register),
-    path('addoss/', searchoss),
+    path('addoss/', overview),
     path('addtolist/', addtolist),
+    path('addtomonitor/', addtomonitor),
+    path(r'overview/', overview),
+    path('new/', new),
 ]

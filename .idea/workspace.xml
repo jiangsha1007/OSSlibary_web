@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="550a23eb-016b-43e8-b601-c22e9abeef06" name="Default Changelist" comment="" />
+    <list default="true" id="550a23eb-016b-43e8-b601-c22e9abeef06" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/platform.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/new.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/overview.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/new.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/overview.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/request_header.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/OSSlib_web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/OSSlib_web.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OSSlib_web/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/OSSlib_web/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/oss.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/oss.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/demo/js/flot-charts/bar.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/demo/js/flot-charts/bar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/addoss.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/addoss.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/common.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/common.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/login.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,83 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/view/addoss.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/login.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/user.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="3" column="16" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/community.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/addoss.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="50" column="50" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OSSlib_web/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
-              <folding>
-                <element signature="e#634#666#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="346" column="85" selection-start-line="346" selection-start-column="85" selection-end-line="346" selection-end-column="85" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/common.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="99">
+              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -98,15 +44,80 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/baseview.py">
+        <entry file="file://$PROJECT_DIR$/templates/overview.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+              <folding>
+                <element signature="e#2134#4981#0#HTML" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/demo/js/flot-charts/pie.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/demo/js/flot-charts/bar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/app.min.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5808">
+              <caret column="176511" selection-start-column="176498" selection-end-column="176511" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="12078">
+              <caret line="366" column="133" selection-start-line="366" selection-start-column="133" selection-end-line="366" selection-end-column="133" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/new.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1170">
+              <caret line="37" column="42" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#44#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/request_header.py">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/django/utils/deprecation.py">
+        <entry file="file://$PROJECT_DIR$/model/community.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3135">
-              <caret line="96" selection-start-line="96" selection-end-line="96" />
+            <state relative-caret-position="165">
+              <caret line="5" column="18" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/oss.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -123,12 +134,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>img</find>
-      <find>1.</find>
-      <find>q</find>
-      <find>1.j</find>
-      <find>theme-stylesheet</find>
-      <find>body</find>
       <find>img/bg</find>
       <find>css</find>
       <find>vendors</find>
@@ -153,7 +158,16 @@
       <find>content</find>
       <find>content__in</find>
       <find>tzinfo</find>
+      <find>col-md-8</find>
+      <find>todo__info</find>
+      <find>jquery.scrollbar.css</find>
+      <find>objects.get</find>
+      <find>peity-bar</find>
+      <find>quick-stats__</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -176,15 +190,21 @@
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/view/index.py" />
         <option value="$PROJECT_DIR$/OSSlib_web/settings.py" />
-        <option value="$PROJECT_DIR$/model/oss.py" />
         <option value="$PROJECT_DIR$/static/css/app.min.css" />
-        <option value="$PROJECT_DIR$/OSSlib_web/urls.py" />
         <option value="$PROJECT_DIR$/templates/addoss.html" />
         <option value="$PROJECT_DIR$/model/community.py" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/view/addoss.py" />
         <option value="$PROJECT_DIR$/view/login.py" />
+        <option value="$PROJECT_DIR$/view/addoss.py" />
+        <option value="$PROJECT_DIR$/model/platform.py" />
         <option value="$PROJECT_DIR$/view/common.py" />
+        <option value="$PROJECT_DIR$/model/oss.py" />
+        <option value="$PROJECT_DIR$/templates/new.html" />
+        <option value="$PROJECT_DIR$/view/new.py" />
+        <option value="$PROJECT_DIR$/OSSlib_web/urls.py" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/view/overview.py" />
+        <option value="$PROJECT_DIR$/templates/overview.html" />
+        <option value="$PROJECT_DIR$/static/demo/js/flot-charts/bar.js" />
       </list>
     </option>
   </component>
@@ -198,75 +218,92 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="OSSlib_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OSSlib_web" type="462c0819:PsiDirectoryNode" />
+              <item name="OSSlibary_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSSlibary_web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="OSSlib_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OSSlib_web" type="462c0819:PsiDirectoryNode" />
+              <item name="OSSlibary_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSSlibary_web" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="OSSlib_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OSSlib_web" type="462c0819:PsiDirectoryNode" />
+              <item name="OSSlibary_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSSlibary_web" type="462c0819:PsiDirectoryNode" />
               <item name="OSSlib_web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="OSSlib_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OSSlib_web" type="462c0819:PsiDirectoryNode" />
+              <item name="OSSlibary_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSSlibary_web" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="OSSlib_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OSSlib_web" type="462c0819:PsiDirectoryNode" />
+              <item name="OSSlibary_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSSlibary_web" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="OSSlib_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OSSlib_web" type="462c0819:PsiDirectoryNode" />
+              <item name="OSSlibary_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSSlibary_web" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSSlibary_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSSlibary_web" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSSlibary_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSSlibary_web" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="flot-charts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSSlibary_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSSlibary_web" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="OSSlib_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OSSlib_web" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OSSlib_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OSSlib_web" type="462c0819:PsiDirectoryNode" />
+              <item name="OSSlibary_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSSlibary_web" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../OSSlib_spider" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\code\python\OSSlib_web\templates" />
-      <recent name="F:\code\python\OSSlib_web\templates\login" />
-      <recent name="F:\code\python\OSSlib_web\static" />
-      <recent name="F:\code\python\OSSlib_web\static\vendor" />
-      <recent name="F:\code\python\OSSlib_web\static\img" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\code\python\OSSlib_web\templates" />
       <recent name="F:\code\python\OSSlib_web\templates\login" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\code\python\OSSlib_web\OSSlibary_web\templates" />
+      <recent name="F:\code\python\OSSlib_web\OSSlibary_web\view" />
+      <recent name="F:\code\python\OSSlib_web\templates" />
+      <recent name="F:\code\python\OSSlib_web\templates\login" />
+      <recent name="F:\code\python\OSSlib_web\static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -323,22 +360,27 @@
       <workItem from="1561592692071" duration="8525000" />
       <workItem from="1561703291113" duration="19639000" />
       <workItem from="1561955979777" duration="3978000" />
+      <workItem from="1562055736088" duration="1715000" />
+      <workItem from="1563285337836" duration="632000" />
+      <workItem from="1563341235100" duration="6689000" />
+      <workItem from="1563408340662" duration="30715000" />
+      <workItem from="1563847840131" duration="5196000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73061000" />
+    <option name="totallyTimeSpent" value="118008000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1721" height="935" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26458207" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2808178" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329602" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49969932" visible="true" weight="0.25995025" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49969932" visible="true" weight="0.26276463" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39925373" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -371,7 +413,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/view/addoss.py</url>
-          <line>8</line>
+          <line>9</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -481,13 +523,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/django/middleware/clickjacking.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -523,13 +558,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1650">
-          <caret line="50" column="44" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OSSlib_web/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1650">
@@ -544,17 +572,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/oss.py">
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="36" column="36" selection-start-line="35" selection-start-column="4" selection-end-line="36" selection-end-column="36" />
+        <state relative-caret-position="99">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/app.min.css">
+    <entry file="file://$PROJECT_DIR$/model/user.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4521">
-          <caret column="137522" selection-start-column="137511" selection-end-column="137522" />
+        <state relative-caret-position="198">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -565,74 +593,148 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="40" column="28" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/platform.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/view/baseview.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="346" column="85" selection-start-line="346" selection-start-column="85" selection-end-line="346" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OSSlib_web/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
-          <folding>
-            <element signature="e#634#666#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/addoss.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="50" column="50" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/community.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/login.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        <state relative-caret-position="660">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="16" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/user.py">
+    <entry file="file://$PROJECT_DIR$/templates/new.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/common.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="307">
+          <caret line="52" column="49" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="49" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#766#2372#0#HTML" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/addoss.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="441">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/addoss.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="85" column="72" selection-start-line="84" selection-start-column="32" selection-end-line="85" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OSSlib_web/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+          <folding>
+            <element signature="e#634#666#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/overview.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="23" column="87" selection-start-line="23" selection-start-column="87" selection-end-line="23" selection-end-column="87" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/common.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/app.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5808">
+          <caret column="176511" selection-start-column="176498" selection-end-column="176511" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12078">
+          <caret line="366" column="133" selection-start-line="366" selection-start-column="133" selection-end-line="366" selection-end-column="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/request_header.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/community.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/oss.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/new.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="37" column="42" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/demo/js/flot-charts/pie.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/overview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+          <folding>
+            <element signature="e#2134#4981#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/demo/js/flot-charts/bar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
         </state>
       </provider>
     </entry>

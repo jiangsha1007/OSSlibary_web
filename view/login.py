@@ -10,7 +10,7 @@ def index(request):
     extra_info = dict()
     uid = request.session['user_id']
     community = get_nav_list(uid)
-    extra_info.update('community', community[0])
+    extra_info.update(community)
     return render(request, 'index.html', extra_info)
 
 
