@@ -1,24 +1,28 @@
 'use strict';
 
 $(document).ready(function(){
+    var line_commit_data = $('#line_commit_data').val();
+    var line_commit_arr = $('#line_commit_arr').val();
+    var line_commit_data_arr = line_commit_data.split(',');
+    var line_commit_arr_arr = line_commit_arr.split(',');
+    var d1 = new Array();
+    var d2 = new Array();
+    for(var i =0; i<line_commit_data_arr.length; i++ ) {
 
+        d1[i] = new Array();
+        d1[i][0] = i;
+        d1[i][1] = line_commit_data_arr[i];
+        d2[i] = new Array();
+        d2[i][0] = i;
+        d2[i][1] = line_commit_arr_arr[i];
+    }
     // Chart Data
     var lineChartData = [
         {
-            label: '2015',
-            data: [[1,60], [2,30], [3,50], [4,100], [5,10], [6,90], [7,85]],
+            label: 'All Repos',
+            data: d1,
             color: '#fff'
         },
-        {
-            label: '2016',
-            data: [[1,20], [2,90], [3,60], [4,40], [5,100], [6,25], [7,65]],
-            color: 'rgba(255,255,255,0.5)'
-        },
-        {
-            label: '2017',
-            data: [[1,100], [2,20], [3,60], [4,90], [5,80], [6,10], [7,5]],
-            color: 'rgba(255,255,255,0.15)'
-        }
     ];
 
     // Chart Options
@@ -50,7 +54,8 @@ $(document).ready(function(){
             shadowSize: 0
         },
 
-        xaxis: {
+        xaxis:{
+            ticks:d2,
             tickColor: 'rgba(255,255,255,0.1)',
             tickDecimals: 0,
             font: {

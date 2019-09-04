@@ -1,12 +1,28 @@
 'use strict';
 
 $(document).ready(function(){
+    var bar_lanuage_data = $('#bar_lanuage_data').val();
+    var bar_lanuage_arr = $('#bar_lanuage_arr').val();
+    var bar_lanuage_data_arr = bar_lanuage_data.split(',');
+    var bar_lanuage_arr_arr = bar_lanuage_arr.split(',');
+    var d1 = new Array();
+    var d2 = new Array();
+    for(var i =0; i<10; i++ ) {
+
+        d1[i] = new Array();
+        d1[i][0] = i;
+        d1[i][1] = bar_lanuage_data_arr[i];
+        d2[i] = new Array();
+        d2[i][0] = i;
+        d2[i][1] = bar_lanuage_arr_arr[i];
+    }
+     var arr = d2;
 
     // Chart Data
     var barChartData = [
         {
-            label: '2015',
-            data: [[1,60], [2,30], [3,50], [4,100], [5,10], [6,90], [7,85]],
+            label: 'Language',
+            data: d1,
             bars: {
                 order: 0,
                 fillColor: '#fff'
@@ -46,6 +62,7 @@ $(document).ready(function(){
             shadowSize: 0
         },
         xaxis: {
+            ticks:arr,
             tickColor: 'rgba(255,255,255,0.1)',
             tickDecimals: 0,
             font: {

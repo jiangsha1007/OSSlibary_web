@@ -82,8 +82,8 @@ def addtolist(request):
         oss_meta_item.has_wiki = int(repo_data['has_wiki'])
     except BaseException as ex:
         oss_meta_item.has_wiki = 0
-
-    oss_meta_item.oss_lastupdate_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
+    oss_meta_item.last_update_date = repo_data['updated_at']
+    oss_meta_item.update_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
     readmeinfo = get_html_json(repo_data['url'] + "/readme", getHeader())[0]
     if len(readmeinfo) > 0:
         try:

@@ -1,5 +1,5 @@
 from django.db import models
-
+from model.oss import *
 
 class OsslibCommunity(models.Model):
     user_id = models.IntegerField(max_length=11)

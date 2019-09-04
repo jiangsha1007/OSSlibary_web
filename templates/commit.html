@@ -1,0 +1,38 @@
+{% extends 'Base.html' %}
+{% load staticfiles %}
+{% block page_js %}
+    <script src="{% static 'vendor/bower_components/select2/dist/js/select2.full.min.js' %}"></script>
+    <script src="{% static 'vendor/bower_components/flot/jquery.flot.js' %}"></script>
+    <script src="{% static 'vendor/bower_components/flot/jquery.flot.pie.js' %}"></script>
+    <script src="{% static 'vendor/bower_components/flot/jquery.flot.resize.js' %}"></script>
+    <script src="{% static 'vendor/bower_components/flot.curvedlines/curvedLines.js' %}"></script>
+    <script src="{% static 'vendor/bower_components/flot.orderbars/js/jquery.flot.orderBars.js' %}"></script>
+    <script src="{% static 'js/jquery.flot.time.js' %}"></script>
+
+    <script src="{% static 'demo/js/flot-charts/curved-line.js' %}"></script>
+    <script src="{% static 'demo/js/flot-charts/line.js' %}"></script>
+    <script src="{% static 'demo/js/flot-charts/chart-tooltips.js' %}"></script>
+
+{% endblock %}
+{% block page_css %}
+    <link rel="stylesheet" href="{% static 'vendor/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css' %}">
+    <link rel="stylesheet" href="{% static 'vendor/bower_components/animate.css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'vendor/bower_components/select2/dist/css/select2.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/app.min.css' %}">
+{% endblock %}
+{% block content%}
+    <div class="row">
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Commit Count</h4>
+                                 <input type="hidden"  id="line_commit_data" value="{{ line_commit_data }}">
+                                <input type="hidden"  id="line_commit_arr" value="{{ line_commit_arr }}">
+
+                                <div class="flot-chart flot-line"></div>
+                                <div class="flot-chart-legends flot-chart-legends--line"></div>
+                            </div>
+                        </div>
+                    </div>
+    </div>
+{% endblock %}

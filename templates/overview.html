@@ -8,36 +8,44 @@
     <script src="{% static 'vendor/bower_components/flot.curvedlines/curvedLines.js' %}"></script>
     <script src="{% static 'vendor/bower_components/flot.orderbars/js/jquery.flot.orderBars.js' %}"></script>
     <script src="{% static 'demo/js/flot-charts/curved-line.js' %}"></script>
-    <script src="{% static 'demo/js/flot-charts/line.js' %}"></script>
     <script src="{% static 'demo/js/flot-charts/bar.js' %}"></script>
     <script src="{% static 'demo/js/flot-charts/dynamic.js' %}"></script>
     <script src="{% static 'demo/js/flot-charts/pie.js' %}"></script>
     <script src="{% static 'demo/js/flot-charts/chart-tooltips.js' %}"></script>
+
 {% endblock %}
 {% block page_css %}
-    <link rel="stylesheet" href="{% static 'vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css' %}">
-        <link rel="stylesheet" href="{% static 'vendors/bower_components/animate.css/animate.min.css' %}">
-    <link rel="stylesheet" href="{% static 'vendors/bower_components/select2/dist/css/select2.min.css' %}">
+    <link rel="stylesheet" href="{% static 'vendor/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css' %}">
+    <link rel="stylesheet" href="{% static 'vendor/bower_components/animate.css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'vendor/bower_components/select2/dist/css/select2.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/app.min.css' %}">
+    <style>
+    .score{margin:.35rem 0rem 0 0;-ms-flex-item-align:start;align-self:flex-start}
+    .score>span{width:180px;height:180px;background-color:rgba(255,255,255,.05);border-radius:50%;display:inline-block;;text-align:center;;vertical-align:middle;margin-right:10rem;padding-top: 70px}
+
+    .score>span>strong{display:block;font-size:3.0rem;font-weight:600;line-height:100%;}
+    .score>.small_circle{width:120px;height:120px;background-color:rgba(255,255,255,.05);border-radius:50%;display:inline-block;;text-align:center;;margin-right:5rem;padding-top: 45px}
+    .score>span>small{display:block;font-size:2.0rem;font-weight:600;line-height:100%;}
+    .score>span>small_title{display:block;font-size:1.0rem;font-weight:600;line-height:100%;}
+    </style>
 {% endblock %}
 {% block content%}
 <div class="row quick-stats">
     <div class="col-sm-6 col-md-3">
         <div class="quick-stats__item">
             <div class="quick-stats__info">
-                <h2>LOC</h2>
-                <small>Total Leads Recieved</small>
+                <h2>Line Count</h2>
+                <small>Total lines</small>
             </div>
 
             <div class="quick-stats__chart peity-bar" style="padding-left: 30px"><h1>{{ loc }}</h1></div>
         </div>
     </div>
-
     <div class="col-sm-6 col-md-3">
         <div class="quick-stats__item">
             <div class="quick-stats__info">
                 <h2>File Count</h2>
-                <small>Total Website Clicks</small>
+                <small>Total files</small>
             </div>
 
             <div class="quick-stats__chart peity-bar" style="padding-left: 30px"><h1>{{ foc }}</h1></div>
@@ -48,7 +56,7 @@
         <div class="quick-stats__item">
             <div class="quick-stats__info">
                 <h2>Deveploper Count</h2>
-                <small></small>
+                <small>Total developers</small>
             </div>
 
             <div class="quick-stats__chart peity-bar" style="padding-left: 30px"><h1>{{ doc }}</h1></div>
@@ -59,65 +67,125 @@
         <div class="quick-stats__item">
             <div class="quick-stats__info">
                 <h2>Commit Count</h2>
-                <small>Total Support Tickets</small>
+                <small>Total commits</small>
             </div>
 
             <div class="quick-stats__chart peity-bar" style="padding-left: 30px"><h1>{{ coc }}</h1></div>
         </div>
     </div>
 </div>
+<div class="card">
+    <div class="toolbar toolbar--inner">
+        <div class="toolbar__label">Health Score</div>
+    </div>
+    <div class="listview listview--bordered q-a">
+        <div class="listview__item q-a__item">
+            <div class="score">
+                <span><small_title>Total Score</small_title><strong>62.36</strong></span>
+                <span class="small_circle"><small>73.42</small></span>
+                <span class="small_circle"><small>60.34</small></span>
+                <span class="small_circle"><small>58.23</small></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card">
+    <div class="toolbar toolbar--inner">
+        <div class="toolbar__label">{{ oss_list_count }} Repositories</div>
+    </div>
+    <div class="listview listview--bordered q-a">
+        {% if oss_list %}
+            {% for per_oss_list in oss_list %}
+                <div class="listview__item q-a__item">
+                    <div class="q-a__stat hidden-sm-down">
+                        <span>
+                            <strong>{{ per_oss_list.oss_line_count }}</strong>
+                            <small>Lines</small>
+                        </span>
+
+                        <span>
+                            <strong>{{ per_oss_list.oss_file_count }}</strong>
+                            <small>Files</small>
+                        </span>
+
+                        <span class="hidden-md-down">
+                            <strong>{{ per_oss_list.oss_developer_count }}</strong>
+                            <small>Developers</small>
+                        </span>
+                        <span>
+                            <strong>{{ per_oss_list.oss_commit_count }}</strong>
+                            <small>Commits</small>
+                        </span>
+                    </div>
+                    <div class="listview__content">
+                        <a href="questions-answers-details.html" class="listview__heading">{{ per_oss_list.oss_fullname }}</a>
+                        <p>{{ per_oss_list.oss_description }}</p>
+                        <div class="listview__attrs">
+                            <span>{{ per_oss_list.oss_main_language }}</span>
+                            <span>{{ per_oss_list.oss_license }}</span>
+                            <span>{{ per_oss_list.oss_create_time }} created</span>
+                            <span>{{ per_oss_list.oss_lastupdate_time }} updated</span>
+                            <span>{{ per_oss_list.oss_homepage }}</span>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+</div>
 <div class="row">
     <div class="col-lg-6">
         <div class="card widget-pie">
-                            <div class="col-6 col-sm-4 col-md-6 col-lg-4 widget-pie__item">
-                                <div class="easy-pie-chart" data-percent="50" data-size="80" data-track-color="rgba(0,0,0,0.5)" data-bar-color="#fff">
-                                    <span class="easy-pie-chart__value">92</span>
-                                </div>
-                                <div class="widget-pie__title">Email<br> Scheduled</div>
-                            </div>
+            <div class="col-6 col-sm-4 col-md-6 col-lg-4 widget-pie__item">
+                <div class="easy-pie-chart" data-percent="{{ issue_closed }}" data-size="80" data-track-color="rgba(0,0,0,0.5)" data-bar-color="#fff">
+                    <span class="easy-pie-chart__value">{{ issue_closed }}</span>
+                </div>
+                <div class="widget-pie__title">Issues<br> closed</div>
+            </div>
 
-                            <div class="col-6 col-sm-4 col-md-6 col-lg-4 widget-pie__item">
-                                <div class="easy-pie-chart" data-percent="11" data-size="80" data-track-color="rgba(0,0,0,0.35)" data-bar-color="#fff">
-                                    <span class="easy-pie-chart__value">11</span>
-                                </div>
-                                <div class="widget-pie__title">Email<br> Bounced</div>
-                            </div>
+            <div class="col-6 col-sm-4 col-md-6 col-lg-4 widget-pie__item">
+                <div class="easy-pie-chart" data-percent="{{ pull_merged }}" data-size="80" data-track-color="rgba(0,0,0,0.35)" data-bar-color="#fff">
+                    <span class="easy-pie-chart__value">{{ pull_merged }}</span>
+                </div>
+                <div class="widget-pie__title">Pulls<br> Merged</div>
+            </div>
 
-                            <div class="col-6 col-sm-4 col-md-6 col-lg-4 widget-pie__item">
-                                <div class="easy-pie-chart" data-percent="52" data-size="80" data-track-color="rgba(0,0,0,0.35)" data-bar-color="#fff">
-                                    <span class="easy-pie-chart__value">52</span>
-                                </div>
-                                <div class="widget-pie__title">Email<br> Opened</div>
-                            </div>
+            <div class="col-6 col-sm-4 col-md-6 col-lg-4 widget-pie__item">
+                <div class="easy-pie-chart" data-percent="{{ developer_core }}" data-size="80" data-track-color="rgba(0,0,0,0.35)" data-bar-color="#fff">
+                    <span class="easy-pie-chart__value">{{ developer_core }}</span>
+                </div>
+                <div class="widget-pie__title">Core<br> Developers</div>
+            </div>
 
-                            <div class="col-6 col-sm-4 col-md-6 col-lg-4 widget-pie__item">
-                                <div class="easy-pie-chart" data-percent="44" data-size="80" data-track-color="rgba(0,0,0,0.35)" data-bar-color="#fff">
-                                    <span class="easy-pie-chart__value">44</span>
-                                </div>
-                                <div class="widget-pie__title">Storage<br>Remaining</div>
-                            </div>
+            <div class="col-6 col-sm-4 col-md-6 col-lg-4 widget-pie__item">
+                <div class="easy-pie-chart" data-percent="{{ core_issue }}" data-size="80" data-track-color="rgba(0,0,0,0.35)" data-bar-color="#fff">
+                    <span class="easy-pie-chart__value">{{ core_issue }}</span>
+                </div>
+                <div class="widget-pie__title">Issues of<br>Core Developers</div>
+            </div>
 
-                            <div class="col-6 col-sm-4 col-md-6 col-lg-4 widget-pie__item">
-                                <div class="easy-pie-chart" data-percent="78" data-size="80" data-track-color="rgba(0,0,0,0.35)" data-bar-color="#fff">
-                                    <span class="easy-pie-chart__value">78</span>
-                                </div>
-                                <div class="widget-pie__title">Web Page<br> Views</div>
-                            </div>
+            <div class="col-6 col-sm-4 col-md-6 col-lg-4 widget-pie__item">
+                <div class="easy-pie-chart" data-percent="{{ core_pull }}" data-size="80" data-track-color="rgba(0,0,0,0.35)" data-bar-color="#fff">
+                    <span class="easy-pie-chart__value">{{ core_pull }}</span>
+                </div>
+                <div class="widget-pie__title">Pulls of<br>Core Developers</div>
+            </div>
 
-                            <div class="col-6 col-sm-4 col-md-6 col-lg-4 widget-pie__item">
-                                <div class="easy-pie-chart" data-percent="32" data-size="80" data-track-color="rgba(0,0,0,0.35)" data-bar-color="#fff">
-                                    <span class="easy-pie-chart__value">32</span>
-                                </div>
-                                <div class="widget-pie__title">Server<br> Processing</div>
-                            </div>
-                        </div>
+            <div class="col-6 col-sm-4 col-md-6 col-lg-4 widget-pie__item">
+                <div class="easy-pie-chart" data-percent="{{ active_day }}" data-size="80" data-track-color="rgba(0,0,0,0.35)" data-bar-color="#fff">
+                    <span class="easy-pie-chart__value">{{ active_day }}</span>
+                </div>
+                <div class="widget-pie__title">Active<br> days</div>
+            </div>
+        </div>
     </div>
     <div class="col-lg-6">
         <div class="card">
             <div class="card-body">
                 <h4 class="card-title">Bar Chart</h4>
-
-                <div class="flot-chart flot-bar"></div>
+                <input type="hidden"  id="bar_lanuage_data" value="{{ bar_lanuage_data }}">
+                <input type="hidden"  id="bar_lanuage_arr" value="{{ bar_lanuage_arr }}">
+                <div id="main" class="flot-chart flot-bar"></div>
                 <div class="flot-chart-legends flot-chart-legends--bar"></div>
             </div>
         </div>

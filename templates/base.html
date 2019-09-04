@@ -364,7 +364,8 @@
                                 {% for per_community in community %}
                                     <a href=""><i class="zmdi zmdi-view-week"></i> {{ per_community.community_name }}</a>
                                     <ul>
-                                        <li class="navigation__sub @@variantsactive"><a href="../overview/?cid={{ per_community.id }}">overview</a></li>
+                                        <li class="navigation"><a href="../overview/?cid={{ per_community.id }}">overview</a></li>
+                                        <li class="navigation"><a href="../commit/?cid={{ per_community.id }}">commit</a></li>
 
                                     {% for per_community_list in community_list %}
                                         {% if per_community_list.community_id == per_community.id %}
@@ -473,7 +474,7 @@
 
         <!-- Charts and maps-->
         <script src="{% static 'demo/js/flot-charts/curved-line.js' %}"></script>
-        <script src="{% static 'demo/js/flot-charts/line.js' %}"></script>
+
         <script src="{% static 'demo/js/flot-charts/dynamic.js' %}"></script>
         <script src="{% static 'demo/js/flot-charts/chart-tooltips.js' %}"></script>
         <script src="{% static 'demo/js/other-charts.js' %}"></script>

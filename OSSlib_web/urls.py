@@ -19,6 +19,7 @@ from view.login import *
 from view.addoss import *
 from view.overview import *
 from view.new import *
+from view.info import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -30,4 +31,5 @@ urlpatterns = [
     path('addtomonitor/', addtomonitor),
     path(r'overview/', overview),
     path('new/', new),
+    path('commit/', commit),
 ]

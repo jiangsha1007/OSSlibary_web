@@ -21,7 +21,7 @@ def login(request):
         username = request.POST.get('loginUsername')
         password = request.POST.get('loginPassword')
         try:
-            user = OsslibUser.objects.get(user_name=username)
+            user = OsslibAdmin.objects.get(user_name=username)
         except BaseException as ex:
             print(ex)
             return render(request, 'login/login.html')
