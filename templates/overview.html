@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="{% static 'vendor/bower_components/animate.css/animate.min.css' %}">
     <link rel="stylesheet" href="{% static 'vendor/bower_components/select2/dist/css/select2.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/app.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/my.css' %}">
     <style>
     .score{margin:.35rem 0rem 0 0;-ms-flex-item-align:start;align-self:flex-start}
     .score>span{width:180px;height:180px;background-color:rgba(255,255,255,.05);border-radius:50%;display:inline-block;;text-align:center;;vertical-align:middle;margin-right:10rem;padding-top: 70px}
@@ -78,15 +79,126 @@
     <div class="toolbar toolbar--inner">
         <div class="toolbar__label">Health Score</div>
     </div>
-    <div class="listview listview--bordered q-a">
-        <div class="listview__item q-a__item">
-            <div class="score">
-                <span><small_title>Total Score</small_title><strong>62.36</strong></span>
-                <span class="small_circle"><small>73.42</small></span>
-                <span class="small_circle"><small>60.34</small></span>
-                <span class="small_circle"><small>58.23</small></span>
+    <div class="listview listview--bordered q-a" style="float:left">
+        <div class="q-a__stat hidden-sm-down" style="float:left">
+            <div id="container" style="height: 350px;width: 350px"></div>
+        </div>
+        <div class="listview__content" style="float:left">
+            <div class="table-responsive">
+                <table class="table table-bordered mb-0">
+                    <thead>
+                    <tr>
+                        <th>oss name</th>
+                        <th>F1</th>
+                        <th>F2</th>
+                        <th>F3</th>
+                        <th>F4</th>
+                        <th>F5</th>
+                        <th>F6</th>
+                        <th>score</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% if oss_list %}
+                        {% for per_oss_list in oss_list %}
+                        <tr>
+                            <td>{{ per_oss_list.oss_fullname }}</td>
+                            <td>{{ per_oss_list.f1 }}</td>
+                            <td>{{ per_oss_list.f2 }}</td>
+                            <td>{{ per_oss_list.f3 }}</td>
+                            <td>{{ per_oss_list.f4 }}</td>
+                            <td>{{ per_oss_list.f5 }}</td>
+                            <td>{{ per_oss_list.f6 }}</td>
+                            <td style="font-size: 16pt">{{ per_oss_list.score }}</td>
+                        </tr>
+                        {% endfor %}
+                    {% endif %}
+                    </tbody>
+                </table>
             </div>
         </div>
+        <input type="hidden" id="oss_name" value="{{ oss_name }}">
+        <input type="hidden" id="oss_score" value="{{ oss_score }}">
+        <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+        <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
+        <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>
+        <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
+        <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
+        <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>
+        <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
+        <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/simplex.js"></script>
+        <script type="text/javascript">
+            var dom = document.getElementById("container");
+            var oss_name = $('#oss_name').val();
+            var oss_name_arr = oss_name.split(',');
+            var oss_score = $('#oss_score').val();
+            var oss_score_arr = oss_score.split(',');
+            var myChart = echarts.init(dom);
+            var app = {};
+            option = null;
+            var lineStyle = {
+                normal: {
+                    width: 1,
+                    opacity: 0.5
+                }
+            };
+            var seri = new Array();
+            for(var i =0; i<oss_name_arr.length; i++ ) {
+                seri[i]={name: oss_name_arr[i],type: 'radar',lineStyle: lineStyle,data: [oss_score_arr[i].split('-')],
+                    symbol: 'none',itemStyle: {normal: {color: '#F9713C'}},areaStyle: {normal: {opacity: 0.1}}};
+            }
+            option = {
+                backgroundColor: 'rgba(128, 128, 128, 0.0)' ,
+                legend: {
+                    bottom: 1,
+                    data: oss_name_arr,
+                    itemGap: 10,
+                    textStyle: {
+                        color: '#fff',
+                        fontSize: 12
+                    },
+                    selectedMode: 'single'
+                },
+                radar: {
+                    indicator: [
+                        {name: 'F1', max: 100},
+                        {name: 'F2', max: 100},
+                        {name: 'F3', max: 100},
+                        {name: 'F4', max: 100},
+                        {name: 'F5', max: 100},
+                        {name: 'F6', max: 100}
+                    ],
+                    shape: 'circle',
+                    splitNumber: 5,
+                    name: {
+                        textStyle: {
+                            color: 'rgb(255, 255, 255)'
+                        }
+                    },
+                    splitLine: {
+                        lineStyle: {
+                            color: [
+                                'rgba(238, 197, 102, 0.1)', 'rgba(238, 197, 102, 0.2)',
+                                'rgba(238, 197, 102, 0.4)', 'rgba(238, 197, 102, 0.6)',
+                                'rgba(238, 197, 102, 0.8)', 'rgba(238, 197, 102, 1)'
+                            ].reverse()
+                        }
+                    },
+                    splitArea: {
+                        show: false
+                    },
+                    axisLine: {
+                        lineStyle: {
+                            color: 'rgba(238, 197, 102, 0.5)'
+                        }
+                    }
+                },
+                series: seri
+            };;
+            if (option && typeof option === "object") {
+                myChart.setOption(option, true);
+            }
+       </script>
     </div>
 </div>
 <div class="card">
@@ -131,6 +243,56 @@
                 </div>
             {% endfor %}
         {% endif %}
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-4">
+        <div class="card">
+            <div class="stats-3-block block d-flex">
+                <div class="stats-3" style="padding-top: 15px;padding-left: 20px"><strong class="d-block">{{ issue_count }}</strong><span class="d-block">Total Issues</span>
+                </div>
+                <div class="stats-3 d-flex justify-content-between text-center">
+                        <div class="item"><strong class="d-block strong-sm">{{ issue_close }}</strong><span class="d-block span-sm">closed issue</span>
+                          <div class="line"></div><small>+246</small>
+                        </div>
+                        <div class="item"><strong class="d-block strong-sm">{{ issue_open }}</strong><span class="d-block span-sm">open issue</span>
+                          <div class="line"></div><small>+416</small>
+                        </div>
+                      </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="card">
+            <div class="stats-3-block block d-flex">
+                <div class="stats-3" style="padding-top: 15px;padding-left: 20px"><strong class="d-block">{{ pulls_count }}</strong><span class="d-block">Total pr</span>
+                </div>
+                <div class="stats-3 d-flex justify-content-between text-center">
+                        <div class="item"><strong class="d-block strong-sm">{{ pulls_merged }}</strong><span class="d-block span-sm">merged pr</span>
+                          <div class="line"></div><small>+246</small>
+                        </div>
+                        <div class="item"><strong class="d-block strong-sm">{{ pulls_unmerged }}</strong><span class="d-block span-sm">unmerged pr</span>
+                          <div class="line"></div><small>+416</small>
+                        </div>
+                      </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="card">
+            <div class="stats-3-block block d-flex">
+                <div class="stats-3"><strong class="d-block">745</strong><span class="d-block">Popularity</span>
+                </div>
+                <div class="stats-3 d-flex justify-content-between text-center">
+                        <div class="item"><strong class="d-block strong-sm">{{  }}</strong><span class="d-block span-sm">star</span>
+                          <div class="line"></div><small>+246</small>
+                        </div>
+                        <div class="item"><strong class="d-block strong-sm">2.147</strong><span class="d-block span-sm">fork</span>
+                          <div class="line"></div><small>+416</small>
+                        </div>
+                      </div>
+            </div>
+        </div>
     </div>
 </div>
 <div class="row">

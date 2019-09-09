@@ -21,6 +21,7 @@ class OsslibMeta(models.Model):
     oss_lastupdate_time = models.CharField(max_length=50)
     oss_owner_id = models.IntegerField(max_length=50)
     oss_owner_type = models.CharField(max_length=100)
+    oss_fork = models.IntegerField(max_length=11)
     oss_star = models.IntegerField(max_length=11)
     oss_main_language = models.CharField(max_length=50)
     oss_owner_id = models.IntegerField(max_length=11)
@@ -35,6 +36,13 @@ class OsslibMeta(models.Model):
     oss_all_day = models.IntegerField(max_length=11)
     oss_active_day = models.IntegerField(max_length=11)
     oss_language = models.CharField(max_length=1000)
+    f1 = models.FloatField()
+    f2 = models.FloatField()
+    f3 = models.FloatField()
+    f4 = models.FloatField()
+    f5 = models.FloatField()
+    f6 = models.FloatField()
+    score = models.FloatField()
     def __str__(self):
         return self.oss_fullname
 

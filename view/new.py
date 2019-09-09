@@ -59,6 +59,10 @@ def addtolist(request):
         oss_meta_item.oss_star = repo_data['stargazers_count']
     except BaseException as ex:
         oss_meta_item.oss_star = 0
+    try:
+        oss_meta_item.oss_fork = repo_data['forks']
+    except BaseException as ex:
+        oss_meta_item.oss_fork = 0
 
     try:
         oss_meta_item.oss_main_language = repo_data['language']
