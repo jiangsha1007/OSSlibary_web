@@ -2,8 +2,8 @@ from django.db import models
 
 
 class OsslibMeta(models.Model):
-    oss_id = models.BigIntegerField()
-    oss_from = models.IntegerField(max_length=11)
+    oss_id = models.BigIntegerField(unique=True)
+    oss_from = models.IntegerField()
     oss_name = models.CharField(max_length=50)
     oss_fullname = models.CharField(max_length=100, unique=True)
     oss_create_time = models.CharField(max_length=50)
@@ -14,27 +14,27 @@ class OsslibMeta(models.Model):
     oss_license = models.CharField(max_length=100)
     oss_description = models.TextField()
     oss_local_path = models.CharField(max_length=50)
-    oss_line_count = models.IntegerField(max_length=50)
-    oss_developer_count = models.IntegerField(max_length=50)
-    oss_file_count = models.IntegerField(max_length=50)
-    oss_commit_count = models.IntegerField(max_length=50)
+    oss_line_count = models.IntegerField()
+    oss_developer_count = models.IntegerField()
+    oss_file_count = models.IntegerField()
+    oss_commit_count = models.IntegerField()
     oss_lastupdate_time = models.CharField(max_length=50)
-    oss_owner_id = models.IntegerField(max_length=50)
+    oss_owner_id = models.IntegerField()
     oss_owner_type = models.CharField(max_length=100)
-    oss_fork = models.IntegerField(max_length=11)
-    oss_star = models.IntegerField(max_length=11)
+    oss_fork = models.IntegerField()
+    oss_star = models.IntegerField()
     oss_main_language = models.CharField(max_length=50)
-    oss_owner_id = models.IntegerField(max_length=11)
+    oss_owner_id = models.IntegerField()
     oss_owner_type = models.CharField(max_length=11)
-    oss_size = models.IntegerField(max_length=11)
+    oss_size = models.IntegerField()
     oss_lastupdate_time = models.CharField(max_length=50)
-    has_wiki = models.IntegerField(max_length=11)
+    has_wiki = models.IntegerField()
     readme = models.CharField(max_length=5000)
-    uid = models.IntegerField(max_length=11)
-    status = models.IntegerField(max_length=11)
+    uid = models.IntegerField()
+    status = models.IntegerField()
     update_time = models.CharField(max_length=50)
-    oss_all_day = models.IntegerField(max_length=11)
-    oss_active_day = models.IntegerField(max_length=11)
+    oss_all_day = models.IntegerField()
+    oss_active_day = models.IntegerField()
     oss_language = models.CharField(max_length=1000)
     f1 = models.FloatField()
     f2 = models.FloatField()
@@ -64,7 +64,7 @@ class OsslibTopic(models.Model):
 class OsslibIssue(models.Model):
     issue_user_type = models.IntegerField()
     issue_state = models.IntegerField()
-    oss_id = models.BigIntegerField()
+    oss = models.ForeignKey(to='OsslibMeta',to_field='oss_id',on_delete='models.CASCADE')
     user_id = models.BigIntegerField()
     issue_close_time = models.CharField(max_length=100)
     issue_create_time = models.CharField(max_length=100)
@@ -77,10 +77,39 @@ class OsslibIssue(models.Model):
     issue_title = models.TextField()
 
     def __str__(self):
-        return self.topic
+        return self.issue_body
 
     class Meta:
         db_table = 'osslib_issue'
+        ordering = ['-issue_create_time']
+
+
+class OsslibPulls(models.Model):
+    pull_id = models.IntegerField()
+    pull_number = models.IntegerField()
+    pull_state = models.IntegerField()
+    pull_author_association = models.CharField(max_length=100)
+    pull_create_time = models.CharField(max_length=100)
+    pull_update_time = models.CharField(max_length=100)
+    pull_closed_time = models.CharField(max_length=100)
+    pull_merged_time = models.CharField(max_length=100)
+    pull_is_merged = models.IntegerField()
+    update_time = models.CharField(max_length=100)
+    user_id = models.IntegerField()
+    oss = models.ForeignKey(to='OsslibMeta', to_field='oss_id', on_delete='models.CASCADE')
+    pull_title = models.TextField()
+    pull_body = models.TextField()
+    pull_is_reviewed = models.IntegerField()
+    pull_comments = models.IntegerField()
+    review_comments = models.IntegerField()
+    request_reviewer = models.TextField()
+
+    def __str__(self):
+        return self.pull_body
+
+    class Meta:
+        db_table = 'osslib_pulls'
+        ordering = ['-pull_create_time']
 
 
 class OsslibStatistic(models.Model):
@@ -125,3 +154,36 @@ class osslib_statistic_commit_yearmonth(models.Model):
     class Meta:
         db_table = 'osslib_statistic_commit_yearmonth'
         ordering = ['yearmonth']
+
+
+class osslib_statistic_issue_yearmonth(models.Model):
+    community_id = models.IntegerField()
+    yearmonth = models.CharField(max_length=100)
+    issue_count = models.IntegerField()
+    close_issue_count = models.IntegerField()
+
+    class Meta:
+        db_table = 'osslib_statistic_issue_yearmonth'
+        ordering = ['yearmonth']
+
+
+class osslib_statistic_pull_yearmonth(models.Model):
+    community_id = models.IntegerField()
+    yearmonth = models.CharField(max_length=100)
+    pull_count = models.IntegerField()
+    merged_pull_count = models.IntegerField()
+
+    class Meta:
+        db_table = 'osslib_statistic_pull_yearmonth'
+        ordering = ['yearmonth']
+
+
+class osslib_statistic_commit_hourday(models.Model):
+    community_id = models.IntegerField()
+    day = models.IntegerField()
+    commit_count = models.IntegerField()
+    hour = models.IntegerField()
+
+    class Meta:
+        db_table = 'osslib_statistic_commit_hourday'
+        ordering = ['day', 'hour']

@@ -32,4 +32,6 @@ urlpatterns = [
     path(r'overview/', overview),
     path('new/', new),
     path('commit/', commit),
+    path('issue/', issue),
+    path('pull/', pull),
 ]

@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="550a23eb-016b-43e8-b601-c22e9abeef06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/css/my.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/oss.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/oss.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/commit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/commit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/overview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/new.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/new.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/info.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/info.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/overview.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/overview.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-229">
-              <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+            <state relative-caret-position="12738">
+              <caret line="386" column="44" selection-start-line="386" selection-start-column="44" selection-end-line="386" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -33,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/demo/js/flot-charts/line.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="9" column="47" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="47" />
+            <state relative-caret-position="99">
+              <caret line="3" column="56" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -42,8 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/info.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="15" column="25" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="25" />
+            <state relative-caret-position="251">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -51,11 +52,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/oss.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+            <state relative-caret-position="5115">
+              <caret line="155" column="32" selection-start-line="155" selection-start-column="32" selection-end-line="155" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/login/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="33">
+              <caret line="28" column="8" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -63,20 +73,54 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/overview.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="289" column="124" selection-start-line="289" selection-start-column="124" selection-end-line="289" selection-end-column="124" />
+            <state relative-caret-position="8171">
+              <caret line="371" column="52" selection-start-line="371" selection-start-column="16" selection-end-line="371" selection-end-column="52" />
               <folding>
+                <element signature="e#3802#9533#0#HTML" />
                 <element signature="e#3916#3934#0#HTML" expanded="true" />
                 <element signature="e#3963#3981#0#HTML" expanded="true" />
                 <element signature="e#4015#4049#0#HTML" expanded="true" />
                 <element signature="e#4111#4129#0#HTML" expanded="true" />
                 <element signature="e#5265#5288#0#HTML" expanded="true" />
+                <element signature="e#9473#11524#0#HTML" />
                 <element signature="e#4374#4497#0#HTML" />
                 <element signature="e#4502#6395#0#HTML" />
-                <element signature="e#11748#11792#0#HTML" expanded="true" />
-                <element signature="e#12710#12754#0#HTML" expanded="true" />
-                <element signature="e#6403#9584#0#HTML" />
-                <element signature="e#6456#9050#0#HTML" />
+                <element signature="e#11608#12751#0#HTML" />
+                <element signature="e#11804#11848#0#HTML" expanded="true" />
+                <element signature="e#12660#13648#0#HTML" />
+                <element signature="e#12800#12844#0#HTML" expanded="true" />
+                <element signature="e#13653#14607#0#HTML" />
+                <element signature="e#13793#13837#0#HTML" expanded="true" />
+                <element signature="e#14779#14816#0#HTML" expanded="true" />
+                <element signature="e#15078#15115#0#HTML" expanded="true" />
+                <element signature="e#15354#15391#0#HTML" expanded="true" />
+                <element signature="e#15838#15875#0#HTML" expanded="true" />
+                <element signature="e#16144#16181#0#HTML" expanded="true" />
+                <element signature="e#16446#16483#0#HTML" expanded="true" />
+                <element signature="e#6498#6907#0#HTML" />
+                <element signature="e#7342#7758#0#HTML" />
+                <element signature="e#7772#8189#0#HTML" />
+                <element signature="e#8203#8617#0#HTML" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/commit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="594">
+              <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+              <folding>
+                <element signature="e#1564#1595#0#HTML" expanded="true" />
+                <element signature="e#1858#1929#0#HTML" expanded="true" />
+                <element signature="e#6359#11266#0#HTML" />
+                <element signature="e#6476#6502#0#HTML" expanded="true" />
+                <element signature="e#6797#6874#0#HTML" expanded="true" />
+                <element signature="e#12725#18946#0#HTML" />
+                <element signature="e#12842#12868#0#HTML" expanded="true" />
+                <element signature="e#13271#13348#0#HTML" expanded="true" />
+                <element signature="e#19207#19228#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -85,8 +129,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/css/my.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+            <state relative-caret-position="1914">
+              <caret line="58" column="21" selection-start-line="58" selection-start-column="15" selection-end-line="58" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -94,20 +138,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/overview.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="76" column="38" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/addoss.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+            <state relative-caret-position="1419">
+              <caret line="48" column="37" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -118,22 +150,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/new.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="62" column="30" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="30" />
+            <state relative-caret-position="1650">
+              <caret line="58" column="60" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="60" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/common.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -152,12 +172,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>select2-container</find>
-      <find>.content</find>
-      <find>not(.content--full)</find>
-      <find>content</find>
-      <find>content__in</find>
-      <find>tzinfo</find>
       <find>col-md-8</find>
       <find>todo__info</find>
       <find>jquery.scrollbar.css</find>
@@ -177,11 +191,17 @@
       <find>data</find>
       <find>card</find>
       <find>oss_name</find>
-      <find>FloatField</find>
       <find>stats-3</find>
       <find>row</find>
-      <find>pull_merged_radio</find>
+      <find>loc</find>
+      <find>locoss_statistic</find>
+      <find>item</find>
       <find>osslib</find>
+      <find>+</find>
+      <find>val</find>
+      <find>pull_merged_radio</find>
+      <find>lan</find>
+      <find>FloatField</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -200,7 +220,6 @@
         <option value="$PROJECT_DIR$/templates/login/register.html" />
         <option value="$PROJECT_DIR$/model/__init__.py" />
         <option value="$PROJECT_DIR$/view/forms.py" />
-        <option value="$PROJECT_DIR$/templates/login/login.html" />
         <option value="$PROJECT_DIR$/static/demo/js/flot-charts/dynamic.js" />
         <option value="$PROJECT_DIR$/templates/login/addoss.html" />
         <option value="$PROJECT_DIR$/view/baseview.py" />
@@ -218,15 +237,16 @@
         <option value="$PROJECT_DIR$/static/css/app.min.css" />
         <option value="$PROJECT_DIR$/OSSlib_web/urls.py" />
         <option value="$PROJECT_DIR$/static/demo/js/flot-charts/bar.js" />
-        <option value="$PROJECT_DIR$/view/info.py" />
-        <option value="$PROJECT_DIR$/templates/commit.html" />
         <option value="$PROJECT_DIR$/static/demo/js/flot-charts/line.js" />
         <option value="$PROJECT_DIR$/static/css/my.css" />
-        <option value="$PROJECT_DIR$/view/overview.py" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/templates/overview.html" />
         <option value="$PROJECT_DIR$/view/new.py" />
+        <option value="$PROJECT_DIR$/view/overview.py" />
+        <option value="$PROJECT_DIR$/templates/overview.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/templates/commit.html" />
         <option value="$PROJECT_DIR$/model/oss.py" />
+        <option value="$PROJECT_DIR$/templates/login/login.html" />
+        <option value="$PROJECT_DIR$/view/info.py" />
       </list>
     </option>
   </component>
@@ -294,6 +314,12 @@
               <item name="OSSlibary_web" type="b2602c69:ProjectViewProjectNode" />
               <item name="OSSlibary_web" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OSSlibary_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OSSlibary_web" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OSSlibary_web" type="b2602c69:ProjectViewProjectNode" />
@@ -396,7 +422,8 @@
       <workItem from="1565522367137" duration="2619000" />
       <workItem from="1565573431893" duration="17406000" />
       <workItem from="1565864139442" duration="593000" />
-      <workItem from="1567606743548" duration="27691000" />
+      <workItem from="1567606743548" duration="53355000" />
+      <workItem from="1568164395494" duration="1037000" />
     </task>
     <task id="LOCAL-00001" summary="20190723 更新">
       <created>1563864421083</created>
@@ -412,22 +439,29 @@
       <option name="project" value="LOCAL" />
       <updated>1567606792663</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="20190909 更新">
+      <created>1567990119296</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1567990119296</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="208344000" />
+    <option name="totallyTimeSpent" value="235045000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1720" height="927" extended-state="0" />
+    <frame x="-8" y="0" width="1720" height="928" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31287605" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31648615" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329602" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49969932" visible="true" weight="0.26666668" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49969932" visible="true" weight="0.03773585" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3982412" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -453,7 +487,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="20190723 更新" />
     <MESSAGE value="20190904 更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="20190904 更新" />
+    <MESSAGE value="20190909 更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="20190909 更新" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -587,13 +622,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3135">
           <caret line="96" selection-start-line="96" selection-end-line="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="40" column="28" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -733,13 +761,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/commit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="29" column="100" selection-start-line="29" selection-start-column="85" selection-end-line="29" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/baseview.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -749,67 +770,6 @@
           <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/info.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/demo/js/flot-charts/line.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="9" column="47" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/my.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/overview.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="76" column="38" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-229">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/overview.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="289" column="124" selection-start-line="289" selection-start-column="124" selection-end-line="289" selection-end-column="124" />
-          <folding>
-            <element signature="e#3916#3934#0#HTML" expanded="true" />
-            <element signature="e#3963#3981#0#HTML" expanded="true" />
-            <element signature="e#4015#4049#0#HTML" expanded="true" />
-            <element signature="e#4111#4129#0#HTML" expanded="true" />
-            <element signature="e#5265#5288#0#HTML" expanded="true" />
-            <element signature="e#4374#4497#0#HTML" />
-            <element signature="e#4502#6395#0#HTML" />
-            <element signature="e#11748#11792#0#HTML" expanded="true" />
-            <element signature="e#12710#12754#0#HTML" expanded="true" />
-            <element signature="e#6403#9584#0#HTML" />
-            <element signature="e#6456#9050#0#HTML" />
           </folding>
         </state>
       </provider>
@@ -824,20 +784,120 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/new.py">
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="62" column="30" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="30" />
+        <state relative-caret-position="12738">
+          <caret line="386" column="44" selection-start-line="386" selection-start-column="44" selection-end-line="386" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/demo/js/flot-charts/line.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="3" column="56" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/oss.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5115">
+          <caret line="155" column="32" selection-start-line="155" selection-start-column="32" selection-end-line="155" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/my.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1914">
+          <caret line="58" column="21" selection-start-line="58" selection-start-column="15" selection-end-line="58" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/overview.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1419">
+          <caret line="48" column="37" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/oss.py">
+    <entry file="file://$PROJECT_DIR$/view/new.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+        <state relative-caret-position="1650">
+          <caret line="58" column="60" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/info.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/overview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8171">
+          <caret line="371" column="52" selection-start-line="371" selection-start-column="16" selection-end-line="371" selection-end-column="52" />
+          <folding>
+            <element signature="e#3802#9533#0#HTML" />
+            <element signature="e#3916#3934#0#HTML" expanded="true" />
+            <element signature="e#3963#3981#0#HTML" expanded="true" />
+            <element signature="e#4015#4049#0#HTML" expanded="true" />
+            <element signature="e#4111#4129#0#HTML" expanded="true" />
+            <element signature="e#5265#5288#0#HTML" expanded="true" />
+            <element signature="e#9473#11524#0#HTML" />
+            <element signature="e#4374#4497#0#HTML" />
+            <element signature="e#4502#6395#0#HTML" />
+            <element signature="e#11608#12751#0#HTML" />
+            <element signature="e#11804#11848#0#HTML" expanded="true" />
+            <element signature="e#12660#13648#0#HTML" />
+            <element signature="e#12800#12844#0#HTML" expanded="true" />
+            <element signature="e#13653#14607#0#HTML" />
+            <element signature="e#13793#13837#0#HTML" expanded="true" />
+            <element signature="e#14779#14816#0#HTML" expanded="true" />
+            <element signature="e#15078#15115#0#HTML" expanded="true" />
+            <element signature="e#15354#15391#0#HTML" expanded="true" />
+            <element signature="e#15838#15875#0#HTML" expanded="true" />
+            <element signature="e#16144#16181#0#HTML" expanded="true" />
+            <element signature="e#16446#16483#0#HTML" expanded="true" />
+            <element signature="e#6498#6907#0#HTML" />
+            <element signature="e#7342#7758#0#HTML" />
+            <element signature="e#7772#8189#0#HTML" />
+            <element signature="e#8203#8617#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="28" column="8" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/commit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+          <folding>
+            <element signature="e#1564#1595#0#HTML" expanded="true" />
+            <element signature="e#1858#1929#0#HTML" expanded="true" />
+            <element signature="e#6359#11266#0#HTML" />
+            <element signature="e#6476#6502#0#HTML" expanded="true" />
+            <element signature="e#6797#6874#0#HTML" expanded="true" />
+            <element signature="e#12725#18946#0#HTML" />
+            <element signature="e#12842#12868#0#HTML" expanded="true" />
+            <element signature="e#13271#13348#0#HTML" expanded="true" />
+            <element signature="e#19207#19228#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

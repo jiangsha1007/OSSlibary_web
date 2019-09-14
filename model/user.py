@@ -8,7 +8,7 @@ class OsslibAdmin(models.Model):
     register_time = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return self.name
+        return self.user_name
 
     class Meta:
         ordering = ['register_time']

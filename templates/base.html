@@ -13,8 +13,18 @@
         <!-- App styles -->
         <link rel="stylesheet" href="{% static 'css/app.min.css' %}">
         <link rel="stylesheet" href="{% static 'css/my.css' %}">
+
         <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+            <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
+            <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>
+            <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
+            <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
+            <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>
+            <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
+            <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/simplex.js"></script>
         {% block page_js %}
+
         {% endblock %}
         {% block page_css %}
         {% endblock %}
@@ -366,9 +376,12 @@
                                     <a href=""><i class="zmdi zmdi-view-week"></i> {{ per_community.community_name }}</a>
                                     <ul>
                                         <li class="navigation"><a href="../overview/?cid={{ per_community.id }}">overview</a></li>
-                                        <li class="navigation"><a href="../commit/?cid={{ per_community.id }}">commit</a></li>
+                                        <li class="navigation"><a href="../commit/?cid={{ per_community.id }}">activity</a></li>
+                                        <li class="navigation"><a href="../issue/?cid={{ per_community.id }}">issue</a></li>
+                                        <li class="navigation"><a href="../pull/?cid={{ per_community.id }}">pull request</a></li>
+                                        <li class="navigation"><a href="../author/?cid={{ per_community.id }}">developer</a></li>
 
-                                    {% for per_community_list in community_list %}
+                                        {% for per_community_list in community_list %}
                                         {% if per_community_list.community_id == per_community.id %}
                                             <li class="navigation__sub @@variantsactive"><a href="">{{ per_community_list.oss_name }}</a></li>
                                         {% endif %}
